@@ -1,0 +1,2 @@
+•.psd filter=lfs diff=lfs merge=lfs -text
+content/endPrototype/models/model.pth filter=lfs diff=lfs merge=lfs -text
