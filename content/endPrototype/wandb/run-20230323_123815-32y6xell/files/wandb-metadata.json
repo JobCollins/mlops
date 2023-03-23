@@ -1,0 +1,41 @@
+{
+    "os": "Darwin-21.6.0-x86_64-i386-64bit",
+    "python": "3.7.15",
+    "heartbeatAt": "2023-03-23T09:38:17.007736",
+    "startedAt": "2023-03-23T09:38:15.614255",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "content/endPrototype/01_EDA.ipynb",
+    "root": "/Users/jobdulo/Documents/mlops",
+    "git": {
+        "remote": "https://github.com/JobCollins/mlops.git",
+        "commit": "e06c9f3ed827aed4b65b591db74bc1f1e48f478c"
+    },
+    "email": "dulo.collins@gmail.com",
+    "host": "Jobs-MacBook-Air.local",
+    "username": "jobdulo",
+    "executable": "/Users/jobdulo/opt/anaconda3/envs/fastai/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 411.18206787109375
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

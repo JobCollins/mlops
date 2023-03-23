@@ -1,0 +1,795 @@
+2023-03-23 12:38:06,062 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Configure stats pid to 6337
+2023-03-23 12:38:06,063 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Loading settings from /Users/jobdulo/.config/wandb/settings
+2023-03-23 12:38:06,063 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Loading settings from /Users/jobdulo/Documents/mlops/content/endPrototype/wandb/settings
+2023-03-23 12:38:06,063 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-03-23 12:38:06,063 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-23 12:38:06,063 INFO    MainThread:6337 [wandb_init.py:_log_setup():476] Logging user logs to /Users/jobdulo/Documents/mlops/content/endPrototype/wandb/run-20230323_123806-3n0uyjzt/logs/debug.log
+2023-03-23 12:38:06,063 INFO    MainThread:6337 [wandb_init.py:_log_setup():477] Logging internal logs to /Users/jobdulo/Documents/mlops/content/endPrototype/wandb/run-20230323_123806-3n0uyjzt/logs/debug-internal.log
+2023-03-23 12:38:06,064 INFO    MainThread:6337 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fafed3f0150>
+2023-03-23 12:38:06,065 INFO    MainThread:6337 [wandb_init.py:init():516] calling init triggers
+2023-03-23 12:38:06,065 INFO    MainThread:6337 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {}
+2023-03-23 12:38:06,065 INFO    MainThread:6337 [wandb_init.py:init():569] starting backend
+2023-03-23 12:38:06,065 INFO    MainThread:6337 [wandb_init.py:init():573] setting up manager
+2023-03-23 12:38:06,069 INFO    MainThread:6337 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-23 12:38:06,073 INFO    MainThread:6337 [wandb_init.py:init():580] backend started and connected
+2023-03-23 12:38:06,101 INFO    MainThread:6337 [wandb_run.py:_label_probe_notebook():1116] probe notebook
+2023-03-23 12:38:06,102 INFO    MainThread:6337 [wandb_run.py:_label_probe_notebook():1126] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-23 12:38:06,102 INFO    MainThread:6337 [wandb_init.py:init():658] updated telemetry
+2023-03-23 12:38:06,157 INFO    MainThread:6337 [wandb_init.py:init():694] communicating run to backend with 60 second timeout
+2023-03-23 12:38:07,115 INFO    MainThread:6337 [wandb_run.py:_on_init():2006] communicating current version
+2023-03-23 12:38:07,483 INFO    MainThread:6337 [wandb_run.py:_on_init():2010] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-23 12:38:07,483 INFO    MainThread:6337 [wandb_init.py:init():728] starting run threads in backend
+2023-03-23 12:38:09,533 WARNING MainThread:6337 [wandb_init.py:init():1099] interrupted
+Traceback (most recent call last):
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 1078, in init
+    run = wi.init()
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 739, in init
+    _ = backend.interface.communicate_run_start(run_obj)
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 235, in communicate_run_start
+    result = self._communicate_run_start(run_start)
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/site-packages/wandb/sdk/interface/interface_shared.py", line 486, in _communicate_run_start
+    result = self._communicate(rec)
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/site-packages/wandb/sdk/interface/interface_shared.py", line 255, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/site-packages/wandb/sdk/interface/router.py", line 36, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Configure stats pid to 6337
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Loading settings from /Users/jobdulo/.config/wandb/settings
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Loading settings from /Users/jobdulo/Documents/mlops/content/endPrototype/wandb/settings
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_init.py:_log_setup():476] Logging user logs to /Users/jobdulo/Documents/mlops/content/endPrototype/wandb/run-20230323_123815-32y6xell/logs/debug.log
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_init.py:_log_setup():477] Logging internal logs to /Users/jobdulo/Documents/mlops/content/endPrototype/wandb/run-20230323_123815-32y6xell/logs/debug-internal.log
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_init.py:init():516] calling init triggers
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {}
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_init.py:init():569] starting backend
+2023-03-23 12:38:15,617 INFO    MainThread:6337 [wandb_init.py:init():573] setting up manager
+2023-03-23 12:38:15,618 INFO    MainThread:6337 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-23 12:38:15,619 INFO    MainThread:6337 [wandb_init.py:init():580] backend started and connected
+2023-03-23 12:38:15,630 INFO    MainThread:6337 [wandb_run.py:_label_probe_notebook():1116] probe notebook
+2023-03-23 12:38:15,630 INFO    MainThread:6337 [wandb_run.py:_label_probe_notebook():1126] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-23 12:38:15,630 INFO    MainThread:6337 [wandb_init.py:init():658] updated telemetry
+2023-03-23 12:38:15,663 INFO    MainThread:6337 [wandb_init.py:init():694] communicating run to backend with 60 second timeout
+2023-03-23 12:38:16,625 INFO    MainThread:6337 [wandb_run.py:_on_init():2006] communicating current version
+2023-03-23 12:38:16,990 INFO    MainThread:6337 [wandb_run.py:_on_init():2010] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-23 12:38:16,990 INFO    MainThread:6337 [wandb_init.py:init():728] starting run threads in backend
+2023-03-23 12:38:19,391 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 48ef820f27dd4513847192698bc3852e (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "48ef820f27dd4513847192698bc3852e"
+)
+2023-03-23 12:38:19,392 WARNING MsgRouterThr:6337 [router.py:message_loop():77] message_loop has been closed
+2023-03-23 12:38:22,032 INFO    MainThread:6337 [wandb_run.py:_console_start():1986] atexit reg
+2023-03-23 12:38:22,033 INFO    MainThread:6337 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2023-03-23 12:38:22,034 INFO    MainThread:6337 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2023-03-23 12:38:22,035 INFO    MainThread:6337 [wandb_run.py:_redirect():1931] Redirects installed.
+2023-03-23 12:38:22,036 INFO    MainThread:6337 [wandb_init.py:init():765] run started, returning control to user process
+2023-03-23 12:38:22,427 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid bfb5331d990a4dc4a7f85664d133c9ce (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "bfb5331d990a4dc4a7f85664d133c9ce"
+)
+2023-03-23 12:38:22,427 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 8b2f63d1f5744d52b64f2262755937dc (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "8b2f63d1f5744d52b64f2262755937dc"
+)
+2023-03-23 12:38:32,033 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 7f006362dd2f48c296b80034b004f4f3 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "7f006362dd2f48c296b80034b004f4f3"
+)
+2023-03-23 12:38:42,503 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid bd9bfa9195234fafb482f12b10ee59f8 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "bd9bfa9195234fafb482f12b10ee59f8"
+)
+2023-03-23 12:38:42,503 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 852ab6927a404ce6b0bfaa796db1f84e (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "852ab6927a404ce6b0bfaa796db1f84e"
+)
+2023-03-23 12:38:52,039 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 717a8555917a424facad42a5abe97753 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "717a8555917a424facad42a5abe97753"
+)
+2023-03-23 12:39:02,432 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 8f18533103274b9e9128af526d4cdf36 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "8f18533103274b9e9128af526d4cdf36"
+)
+2023-03-23 12:39:02,432 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 3ed56eaa5f4a4cf7b18dc3ed4a61c824 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "3ed56eaa5f4a4cf7b18dc3ed4a61c824"
+)
+2023-03-23 12:39:12,055 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid c6af836aec814f79b6e75202b48be40c (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "c6af836aec814f79b6e75202b48be40c"
+)
+2023-03-23 12:39:22,458 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid ca8b3aad12264d5a9dba1f53fe2abf15 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "ca8b3aad12264d5a9dba1f53fe2abf15"
+)
+2023-03-23 12:39:22,459 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 0e2f61e010934f37bc1572badfb5acfa (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "0e2f61e010934f37bc1572badfb5acfa"
+)
+2023-03-23 12:39:32,067 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 9c3180d9d6f24a9c80ec52619f5a9430 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "9c3180d9d6f24a9c80ec52619f5a9430"
+)
+2023-03-23 12:39:42,659 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 517e9b6dea3a43bbb17d7062a243572a (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "517e9b6dea3a43bbb17d7062a243572a"
+)
+2023-03-23 12:39:42,660 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 87a92f5cd7284f27b3bc3a1575bd3e22 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "87a92f5cd7284f27b3bc3a1575bd3e22"
+)
+2023-03-23 12:39:52,082 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 865a34fec4664484ba0209b3a107eea7 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "865a34fec4664484ba0209b3a107eea7"
+)
+2023-03-23 12:40:02,575 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid b833fb25e87f45c4a6f760d7133106b5 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "b833fb25e87f45c4a6f760d7133106b5"
+)
+2023-03-23 12:40:02,576 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid c0f8518ee6c74d818eaa1f3edc8e0a5d (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "c0f8518ee6c74d818eaa1f3edc8e0a5d"
+)
+2023-03-23 12:40:12,101 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid ca642b2410d44bd5b41a5e8746ab9cdd (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "ca642b2410d44bd5b41a5e8746ab9cdd"
+)
+2023-03-23 12:40:22,450 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 85c48392a74d4550b0920af9784d6b60 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "85c48392a74d4550b0920af9784d6b60"
+)
+2023-03-23 12:40:22,451 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 0f05156187a44b1fa307f849599192e6 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "0f05156187a44b1fa307f849599192e6"
+)
+2023-03-23 12:40:32,118 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 447630720e174112a71d8f8a6eafc3ec (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "447630720e174112a71d8f8a6eafc3ec"
+)
+2023-03-23 12:40:42,456 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid bf6d71f42bb34e7392b5b6d2fe2c0334 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "bf6d71f42bb34e7392b5b6d2fe2c0334"
+)
+2023-03-23 12:40:42,457 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 94e96861216944e891b84d57a4c3f5ea (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "94e96861216944e891b84d57a4c3f5ea"
+)
+2023-03-23 12:40:52,132 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid e78a8b1d4bff419c8f588019f5a62adb (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "e78a8b1d4bff419c8f588019f5a62adb"
+)
+2023-03-23 12:41:02,531 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 4c6f5d16283d4a63ac6bedb2b42f12d3 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "4c6f5d16283d4a63ac6bedb2b42f12d3"
+)
+2023-03-23 12:41:02,532 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 9ed9ebee35a94bb9b3d78bf6560f4c4f (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "9ed9ebee35a94bb9b3d78bf6560f4c4f"
+)
+2023-03-23 12:41:12,151 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 311911b08fdb48cda1b2b8e72e272f30 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "311911b08fdb48cda1b2b8e72e272f30"
+)
+2023-03-23 12:41:22,504 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 3c2b1b27dc42479fad6baa858c5c94b7 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "3c2b1b27dc42479fad6baa858c5c94b7"
+)
+2023-03-23 12:41:22,505 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid e584cf47edbb4503b8b4bd03971df4a7 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "e584cf47edbb4503b8b4bd03971df4a7"
+)
+2023-03-23 12:41:32,167 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid e469a01930614d0d8021b47227384021 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "e469a01930614d0d8021b47227384021"
+)
+2023-03-23 12:41:42,515 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid c8927aafb0684fe6993323adb70f685e (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "c8927aafb0684fe6993323adb70f685e"
+)
+2023-03-23 12:41:42,515 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid ca15ee1008b040cfb855544eeb00fdd0 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "ca15ee1008b040cfb855544eeb00fdd0"
+)
+2023-03-23 12:41:52,188 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid d92c3367c188400f8e87b93e0bf41d79 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "d92c3367c188400f8e87b93e0bf41d79"
+)
+2023-03-23 12:42:02,527 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 57f6c1495b364a968a1ee03e82ce563f (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "57f6c1495b364a968a1ee03e82ce563f"
+)
+2023-03-23 12:42:02,529 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid e10b95de530f479d9ee79f85d3721ace (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "e10b95de530f479d9ee79f85d3721ace"
+)
+2023-03-23 12:42:12,203 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 7d83a1b83d324a469c78707b9da1bff1 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "7d83a1b83d324a469c78707b9da1bff1"
+)
+2023-03-23 12:42:22,580 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid a71b177d97444c63ad3e256f72241f9d (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "a71b177d97444c63ad3e256f72241f9d"
+)
+2023-03-23 12:42:22,580 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 049e1711a16f4322a028505ea46f6d81 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "049e1711a16f4322a028505ea46f6d81"
+)
+2023-03-23 12:42:32,218 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 98e7a72e89434674aa93b3543a741eba (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "98e7a72e89434674aa93b3543a741eba"
+)
+2023-03-23 12:42:42,572 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid ea1f76af9490462fa76a213e62cdd476 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "ea1f76af9490462fa76a213e62cdd476"
+)
+2023-03-23 12:42:42,573 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 40b8ef3db76544eeb8da1f4715ba37cd (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "40b8ef3db76544eeb8da1f4715ba37cd"
+)
+2023-03-23 12:42:52,233 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid d45b0566e33243dc9a79ee8718ef5a0c (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "d45b0566e33243dc9a79ee8718ef5a0c"
+)
+2023-03-23 12:43:02,696 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid ed82b33ef29d4cd8bdeb0887eb61f73a (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "ed82b33ef29d4cd8bdeb0887eb61f73a"
+)
+2023-03-23 12:43:02,698 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 3e4e5fa31b6a404c89b30711c28ba4b5 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "3e4e5fa31b6a404c89b30711c28ba4b5"
+)
+2023-03-23 12:43:12,246 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid b1d7f03ecd534b479e39c4d83532167d (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "b1d7f03ecd534b479e39c4d83532167d"
+)
+2023-03-23 12:43:22,560 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid a8c03d1c98d44be0af8ce41ef49e3b18 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "a8c03d1c98d44be0af8ce41ef49e3b18"
+)
+2023-03-23 12:43:22,560 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid ff193891b55c410fa6a2421ae1a9649f (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "ff193891b55c410fa6a2421ae1a9649f"
+)
+2023-03-23 12:43:32,260 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 25f674dbe57344859eb8c36eeb4db976 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "25f674dbe57344859eb8c36eeb4db976"
+)
+2023-03-23 12:43:42,733 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid cab0da04130843978a2d88686e28d7ac (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "cab0da04130843978a2d88686e28d7ac"
+)
+2023-03-23 12:43:42,733 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 63e4541c03de47a6a2cf08dabfc4ef89 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "63e4541c03de47a6a2cf08dabfc4ef89"
+)
+2023-03-23 12:43:52,269 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 0731a4b5f1a349de948bfa3b6d0a4827 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "0731a4b5f1a349de948bfa3b6d0a4827"
+)
+2023-03-23 12:44:02,597 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 07a2a70ff6e442109f4ce49a753f749f (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "07a2a70ff6e442109f4ce49a753f749f"
+)
+2023-03-23 12:44:02,598 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 5cae336f370f4cc689182d8419ecc793 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "5cae336f370f4cc689182d8419ecc793"
+)
+2023-03-23 12:44:12,280 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 2cf7c4a6b3ed4c1991e00e7adf347c00 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "2cf7c4a6b3ed4c1991e00e7adf347c00"
+)
+2023-03-23 12:44:22,569 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 8d2d038446a44e9d9f6fc8fba57f4c49 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "8d2d038446a44e9d9f6fc8fba57f4c49"
+)
+2023-03-23 12:44:22,570 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 9384ccf5310148a5a905a7511d8d3a0a (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "9384ccf5310148a5a905a7511d8d3a0a"
+)
+2023-03-23 12:44:32,295 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 3211cfadc48e4cc28ee9f79a7accb20e (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "3211cfadc48e4cc28ee9f79a7accb20e"
+)
+2023-03-23 12:44:42,567 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid febc2a74320645f4b3d042acf463c1a6 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "febc2a74320645f4b3d042acf463c1a6"
+)
+2023-03-23 12:44:42,568 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 92acaf09bd834cae9c87328bee5afbe4 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "92acaf09bd834cae9c87328bee5afbe4"
+)
+2023-03-23 12:44:52,305 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 0e6fd4f1c05a4986882540892585116f (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "0e6fd4f1c05a4986882540892585116f"
+)
+2023-03-23 12:45:02,563 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid fa04b3eab9fe45a4b2647a777cc7bcaf (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "fa04b3eab9fe45a4b2647a777cc7bcaf"
+)
+2023-03-23 12:45:02,564 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid b44c7cb8aab14795ade449df788085d0 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "b44c7cb8aab14795ade449df788085d0"
+)
+2023-03-23 12:45:12,323 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 6328d15b904643118db74c5552cd3f1e (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "6328d15b904643118db74c5552cd3f1e"
+)
+2023-03-23 12:45:22,559 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 77fc75f20b8d44b49eba6da359322b6e (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "77fc75f20b8d44b49eba6da359322b6e"
+)
+2023-03-23 12:45:22,559 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid e51918e855d24b0d9f1efd83215bba88 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "e51918e855d24b0d9f1efd83215bba88"
+)
+2023-03-23 12:45:32,334 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid e585766fd96e42d3a93c620a560a311c (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "e585766fd96e42d3a93c620a560a311c"
+)
+2023-03-23 12:45:42,595 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 7e3fa3a29c264ef092a8c8de8095da30 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "7e3fa3a29c264ef092a8c8de8095da30"
+)
+2023-03-23 12:45:42,596 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 4d6fe2213f6449fab37fdabbdca9b576 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "4d6fe2213f6449fab37fdabbdca9b576"
+)
+2023-03-23 12:45:52,342 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid e31956d5719548d8997666c199c276f2 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "e31956d5719548d8997666c199c276f2"
+)
+2023-03-23 12:46:02,586 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 21bbd88523f541eca59d632e5cdbebe0 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "21bbd88523f541eca59d632e5cdbebe0"
+)
+2023-03-23 12:46:02,586 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid a72b1dbaec804cbba5e80b8424f4fb29 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "a72b1dbaec804cbba5e80b8424f4fb29"
+)
+2023-03-23 12:46:12,361 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid bba60abf2cc844a2aba4a2eb8a8dd77b (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "bba60abf2cc844a2aba4a2eb8a8dd77b"
+)
+2023-03-23 12:46:22,698 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 8d8178b5e8474f4c986351250c600739 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "8d8178b5e8474f4c986351250c600739"
+)
+2023-03-23 12:46:22,700 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 6c0ca6b4926f4faa9cc7a66896e3a2f9 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "6c0ca6b4926f4faa9cc7a66896e3a2f9"
+)
+2023-03-23 12:46:32,376 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 0d7fe134c846425d8288ce3b052a2e88 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "0d7fe134c846425d8288ce3b052a2e88"
+)
+2023-03-23 12:46:42,648 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 2444b9a70bb240f1a057bc6e62073e91 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "2444b9a70bb240f1a057bc6e62073e91"
+)
+2023-03-23 12:46:42,649 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid c6e0da6dd2254fd2aee831425053e847 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "c6e0da6dd2254fd2aee831425053e847"
+)
+2023-03-23 12:46:52,385 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 615a4bcc65e04d2aad14b81b884644d6 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "615a4bcc65e04d2aad14b81b884644d6"
+)
+2023-03-23 12:47:02,719 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid a4fa01b5b9e049a882174f630f7686be (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "a4fa01b5b9e049a882174f630f7686be"
+)
+2023-03-23 12:47:02,720 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid ea6d07f53bbb401f81c786dd5b21d148 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "ea6d07f53bbb401f81c786dd5b21d148"
+)
+2023-03-23 12:47:12,404 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 942b2f638f64408eb134ea4efd3bb959 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "942b2f638f64408eb134ea4efd3bb959"
+)
+2023-03-23 12:47:22,639 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid 5a3b6135f6c54d0ba59dac30e8241b4f (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "5a3b6135f6c54d0ba59dac30e8241b4f"
+)
+2023-03-23 12:47:22,642 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid f9c0f5aaffb24aa7b08b5f8525df76e7 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "f9c0f5aaffb24aa7b08b5f8525df76e7"
+)
+2023-03-23 12:47:32,427 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid aaa76391a20a4ad39da68117016701ca (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "aaa76391a20a4ad39da68117016701ca"
+)
+2023-03-23 12:47:42,638 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid bb69126e191a4907995324af17ae8200 (response {
+  stop_status_response {
+  }
+}
+control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "bb69126e191a4907995324af17ae8200"
+)
+2023-03-23 12:47:42,640 WARNING MsgRouterThr:6337 [router.py:_handle_msg_rcv():115] No listener found for msg with uuid b012a8ebd9a449b4b3bf50d2483cad13 (control {
+  req_resp: true
+  local: true
+  relay_id: "8d96b2cd4dfb41e884e5330325c0e3a6"
+}
+uuid: "b012a8ebd9a449b4b3bf50d2483cad13"
+)

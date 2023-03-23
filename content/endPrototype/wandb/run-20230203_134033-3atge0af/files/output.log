@@ -1,0 +1,18 @@
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/jobdulo/.fastai/data/archive/Tile 1/images)... Done. 0.1s
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/jobdulo/.fastai/data/archive/Tile 1/masks)... Done. 0.1s
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/logging/__init__.py", line 1029, in emit
+    self.flush()
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/logging/__init__.py", line 1009, in flush
+    self.stream.flush()
+OSError: [Errno 5] Input/output error
+Call stack:
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/Users/jobdulo/opt/anaconda3/envs/fastai/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/Users/jobdulo/.local/lib/python3.7/site-packages/ipykernel/parentpoller.py", line 35, in run
+    get_logger().warning("Parent appears to have exited, shutting down.")
+Message: 'Parent appears to have exited, shutting down.'
+Arguments: ()
